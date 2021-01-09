@@ -469,6 +469,7 @@ a:hover {
   text-transform: uppercase;
   font-size: 100px;
   letter-spacing: 0.08em;
+  white-space: nowrap;
 }
 
 /* about begin */
