@@ -1,0 +1,362 @@
+/* 初始化 */
+body,
+div,
+ul,
+li,
+ol,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+input,
+textarea,
+select,
+p,
+dl,
+dt,
+dd,
+a,
+img,
+button,
+form,
+table,
+th,
+tr,
+td,
+tbody,
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+    margin: 0;
+
+    padding: 0;
+
+    /* 禁止用户选中文字
+    -webkit-touch-callout: none;
+
+    -webkit-user-select: none;
+
+    -moz-user-select: none;
+
+    -ms-user-select: none;
+
+    user-select: none; */
+
+    box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    /* Firefox */
+    -webkit-box-sizing: border-box;
+    /* Safari */
+}
+
+/* 取消链接高亮  */
+body,
+div,
+ul,
+li,
+ol,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+input,
+textarea,
+select,
+p,
+dl,
+dt,
+dd,
+a,
+img,
+button,
+form,
+table,
+th,
+tr,
+td,
+tbody,
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+    -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+    -webkit-tap-highlight-color: transparent;
+    -moz-tap-highlight-color: transparent;
+}
+
+/* 设置HTML5元素为块 */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+    display: block;
+}
+
+
+
+body {
+    /* CSS3 抗锯齿形 让文字显示的更加清晰 */
+    -webkit-font-smoothing: antialiased;
+    background: #fff;
+    color: #666;
+    font: 14px/1.5;
+    font-family: "Microsoft YaHei", "Arial", "黑体", "\5B8B\4F53", sans-serif;
+}
+
+td,
+th,
+caption {
+    font-size: 14px;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-weight: normal;
+    font-size: 100%;
+    font-family: 'Microsoft YaHei';
+}
+
+address,
+caption,
+cite,
+code,
+dfn,
+em,
+strong,
+th,
+var {
+    font-style: normal;
+    font-weight: normal;
+}
+
+i,
+em {
+    font-style: normal;
+}
+
+a {
+    color: #666;
+    text-decoration: none;
+}
+
+a:hover {
+    color: #f4a016;
+    text-decoration: underline;
+}
+
+html,
+body {
+    height: 100%;
+    width: 100%;
+}
+
+/* 图片自适应 */
+img {
+    width: 100%;
+
+    height: auto;
+
+    width: auto\9;
+    /* ie8 */
+
+    border: none;
+
+    /* 取消图片底侧有空白缝隙的问题 */
+    vertical-align: middle;
+
+    -ms-interpolation-mode: bicubic;
+    /*为了照顾ie图片缩放失真*/
+}
+
+ol,
+ul,
+li {
+    list-style: none;
+}
+
+input,
+textarea,
+select,
+button {
+    font: 14px "Microsoft YaHei", "Arial", "黑体", "宋体", sans-serif;
+}
+
+button {
+    /* 当我们鼠标经过button 按钮的时候，鼠标变成小手 */
+    cursor: pointer;
+}
+
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+/* 裁剪 html元素中内容的左/右边缘 - 如果溢出元素的内容区域的话 */
+html {
+    overflow-y: scroll;
+}
+
+/* 移动端点击a链接出现蓝色背景问题解决 */
+a:link,
+a:active,
+a:visited,
+a:hover {
+    background: none;
+
+    -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+
+    -webkit-tap-highlight-color: transparent;
+
+}
+
+/* 选中时的文本颜色 */
+::selection {
+    background: #f4a016 !important;
+    color: #fff !important;
+}
+
+::-moz-selection {
+    background: #f4a016 !important;
+    color: #fff !important;
+}
+
+::-webkit-selection {
+    background: #f4a016 !important;
+    color: #fff !important;
+}
+
+/* 禁止缩放表单 */
+
+input[type="submit"],
+input[type="reset"],
+input[type="button"],
+input {
+    resize: none;
+    border: none;
+}
+
+/* 解决IOS默认滑动很卡的情况 */
+
+html {
+    -webkit-text-size-adjust: 100%;
+    -ms-text-size-adjust: 100%;
+    -webkit-overflow-scrolling: touch;
+}
+
+/* 取消导航条 Chrome Safari*/
+/* ::-webkit-scrollbar {
+    display: none;
+} */
+
+
+
+/*公共类*/
+.clearfix:after {
+    content: ".";
+    display: block;
+    height: 0;
+    clear: both;
+    visibility: hidden;
+}
+
+.clearfix {
+    *zoom: 1;
+}
+
+.fl {
+    float: left;
+}
+
+.fr {
+    float: right;
+}
+
+.al {
+    text-align: left;
+}
+
+.ac {
+    text-align: center;
+}
+
+.ar {
+    text-align: right;
+}
+
+.hide {
+    display: none;
+}
+
+/*背景及色值表*/
+.bg000 {
+    background: #000;
+}
+
+.color000 {
+    color: #000;
+}
+
+.padding90 {
+    padding: 90px 0;
+}
+
+
+/*单行溢出*/
+
+.one-txt-cut {
+    overflow: hidden;
+    /*规定当文本溢出包含元素时发生的事情*/
+
+    white-space: nowrap;
+    /*如何处理元素内的空白符。nowrap表示文本不会换行，文本会在在同一行上继续，直到遇到 <br> 标签为止。*/
+
+    text-overflow: ellipsis;
+}
+
+/*多行溢出 手机端使用*/
+
+.txt-cut {
+    overflow: hidden;
+
+    text-overflow: ellipsis;
+    /*显示省略符号来代表被修剪的文本*/
+
+    display: -webkit-box;
+    /*将对象作为弹性伸缩盒子模型显示*/
+
+    /* -webkit-line-clamp: 2; */
+    /*限制在一个块元素显示的文本的行数*/
+
+    -webkit-box-orient: vertical;
+    /*设置或检索伸缩盒对象的子元素的排列方式*/
+}
