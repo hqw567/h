@@ -15,7 +15,7 @@
 /* bg begin */
 .bg {
   position: relative;
-  height: 100%;
+  height: 100vh;
   width: 100%;
   background: url(https://bing.mcloc.cn/api) no-repeat center center;
   background-size: cover;
@@ -26,8 +26,6 @@
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  /* width: 100%; */
-
 }
 
 .bg .bg-2 {
@@ -62,8 +60,6 @@
 /* major begin */
 .major {
   background: rgb(246, 246, 246);
-  /* text-align: center; */
-  /* margin: 0 auto; */
 }
 
 .major h4 {
@@ -77,10 +73,8 @@
 }
 
 .icon {
-
   width: 50px;
   height: 50px;
-  /* background: pink; */
   display: table;
   margin: 0 auto 25px;
   font-size: 40px;
@@ -89,9 +83,7 @@
 }
 
 .icon:hover {
-
   transform: translateY(20px);
-
 }
 
 .major2 {
@@ -132,6 +124,7 @@
 }
 
 .content {
+  overflow: hidden;
   width: 240px;
   height: 330px;
   border-radius: 25px;
@@ -144,13 +137,15 @@
 
 .content p {
   font-weight: 700px;
-  overflow: hidden;
   white-space: nowrap;
   font-size: 20px;
+  height: 90px;
+  line-height: 90px;
   width: 0px;
   color: #000;
   margin: 0 auto;
   animation: content 8s linear infinite;
+  overflow: hidden;
 }
 
 .content:hover p {
@@ -167,7 +162,17 @@
 .content img {
   border-radius: 25px 25px 0 0;
   width: 100%;
-  margin-bottom: 30px;
+  transition: all .5s;
+}
+
+.content_img {
+  height: 240px;
+  width: 240px;
+  overflow: hidden;
+}
+
+.content:hover img {
+  transform: translateY(30px) scale(1.3);
 }
 
 /* comment begin  */
@@ -194,7 +199,6 @@
 
 .fo {
   background: #2a2a2a;
-
 }
 
 .footer {
@@ -371,5 +375,11 @@
   .copyright_p_m {
 
     padding-bottom: 5px;
+  }
+}
+
+@media only screen and (max-width: 1200px) {
+  .footer {
+    padding: 0;
   }
 }
